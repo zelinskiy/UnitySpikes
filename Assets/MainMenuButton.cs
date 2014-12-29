@@ -5,6 +5,6 @@ public class MainMenuButton : MonoBehaviour {
 
 	void OnMouseDown(){
 		Application.LoadLevel ("Menu");
-		
+		print ("Toplel");
 	}
 }

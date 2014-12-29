@@ -15,18 +15,19 @@ public class PlayerController : MonoBehaviour {
 	private int ClipNum;				//number of music file, used in randomClip
 	private bool IsDying = false;		//We must not be able to control our player when we failed
 
-	//Various music
-	public AudioClip First;
-	public AudioClip Second;
-	public AudioClip Third;
-	public AudioClip Fourth;
-	public AudioClip Fifth;
+
 
 	public GameObject Spikes;
 	public GameObject LeftSpikes;				
 	public GameObject GUIObject;				//All GUI Parent
 	public GameObject LvLText;					//N of touches
 	public GameObject BestScore;
+
+	void Start(){
+		NumOfSpikes = 0;
+		LeftSpikes.GetComponent<LeftSpikes>().AbsDestroyer();
+		Spikes.GetComponent<Spikes>().AbsDestroyer();
+		}
 
 	void Update () {					
 
@@ -54,13 +55,13 @@ public class PlayerController : MonoBehaviour {
 		{
 			side = -1.0f;
 			NumOfTouches += 1;
-			Invoke("LSpikesDestroyerCaller", 2f);
+			Invoke("LSpikesDestroyerCaller", 3f);
 
 
 		}
 		if (c.gameObject.tag == "LeftSide")
 		{
-			Invoke("RSpikesDestroyerCaller", 2f);
+			Invoke("RSpikesDestroyerCaller", 3f);
 			side = 1.0f;
 			NumOfTouches += 1;
 
@@ -109,21 +110,7 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
-	public void RandomClip(){
-		ClipNum = (int)Random.Range (1.0f, 5.0f);
-		
-		if (ClipNum == 1)
-			audio.clip = First;
-		else if (ClipNum == 2)
-			audio.clip = Second;
-		else if (ClipNum == 3)
-			audio.clip = Third;
-		else if (ClipNum == 4)
-			audio.clip = Fourth;
-		else if (ClipNum == 5)
-			audio.clip = Fifth;
-		audio.Play();
-	}
+
 
 
 

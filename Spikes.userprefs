@@ -1,14 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Spikes.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="57" Column="28" />
-      <File FileName="Assets\Scripts\Rotator.cs" Line="12" Column="1" />
-      <File FileName="Assets\Scripts\Author.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LeftSpikes.cs" Line="79" Column="2" />
-      <File FileName="Assets\MainMenuButton.cs" Line="11" Column="1" />
-      <File FileName="Assets\RestartButton.cs" Line="15" Column="44" />
-      <File FileName="Assets\Scripts\Spikes.cs" Line="6" Column="45" />
+      <File FileName="Assets\Skin_changer.cs" Line="44" Column="3" />
+      <File FileName="Assets\Scripts\Spikes.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LeftSpikes.cs" Line="82" Column="17" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="27" Column="19" />
+      <File FileName="Assets\MainMenuButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Skins\Change_Skin.cs" Line="9" Column="3" />
+      <File FileName="Assets\Skins\Ukr\HohloSkin.cs" Line="1" Column="1" />
+      <File FileName="Assets\SkinChangerMenu.cs" Line="5" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

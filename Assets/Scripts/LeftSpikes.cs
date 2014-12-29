@@ -13,8 +13,8 @@ public class LeftSpikes : MonoBehaviour {
 	{
 		absoluteRightPos = transform.position.x;
 		Destroyer ();
-		absoluteLeftPos = absoluteRightPos - 0.5f;
-		StarterRandom = absoluteLeftPos + 0.2f ;
+		absoluteLeftPos = absoluteRightPos - 2f;
+		//StarterRandom = absoluteLeftPos + 0.2f ;
 
 	}
 
@@ -39,7 +39,7 @@ public class LeftSpikes : MonoBehaviour {
 		{ 
 			transform.Translate(Vector2.right  * Time.deltaTime * 1);
 			
-		}
+		}/*
 
 		if (transform.position.x <= StarterRandom && leftCornerToShow == false)
 		{ 
@@ -47,10 +47,11 @@ public class LeftSpikes : MonoBehaviour {
 				Destroyer();
 
 			}
-		}
-
-		
+		}*/
 	}
+
+
+
 	
 	private int SpikeNum;
 	
@@ -64,6 +65,7 @@ public class LeftSpikes : MonoBehaviour {
 	public GameObject S8;
 	public GameObject S9;
 	public GameObject S10;
+	/*
 	public GameObject S11;
 	public GameObject S12;
 	public GameObject S13;
@@ -75,6 +77,7 @@ public class LeftSpikes : MonoBehaviour {
 	public GameObject S19;
 	public GameObject S20;
 	public GameObject S21;
+	*/
 
 	public void AbsDestroyer (){
 		foreach (Transform child in transform)
@@ -121,6 +124,7 @@ public class LeftSpikes : MonoBehaviour {
 			S9.SetActive(true);
 		else if (SpikeNum == 10)
 			S10.SetActive(true);
+		/*
 		else if (SpikeNum == 11)
 			S11.SetActive(true);
 		else if (SpikeNum == 12)
@@ -143,10 +147,11 @@ public class LeftSpikes : MonoBehaviour {
 			S20.SetActive(true);
 		else if (SpikeNum == 21)
 			S21.SetActive(true);
+			*/
 	}
 	void RandomSpikeNum()
 	{
-		SpikeNum = (int)Random.Range (1.0f, 21.0f);
+		SpikeNum = (int)Random.Range (1.0f, 10.0f);
 
 	}
 }

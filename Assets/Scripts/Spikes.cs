@@ -13,13 +13,12 @@ public class Spikes : MonoBehaviour {
 	{
 		absoluteLeftPos = transform.position.x;
 		Destroyer ();
-		absoluteRightPos = absoluteLeftPos + 0.5f;
+		absoluteRightPos = absoluteLeftPos + 2f;
 
 
 	}
 
 	void Update () {
-
 		float side = PlayerController.Move;
 
 		if (side >= 0)
@@ -56,6 +55,7 @@ public class Spikes : MonoBehaviour {
 	public GameObject S8;
 	public GameObject S9;
 	public GameObject S10;
+	/*
 	public GameObject S11;
 	public GameObject S12;
 	public GameObject S13;
@@ -67,6 +67,7 @@ public class Spikes : MonoBehaviour {
 	public GameObject S19;
 	public GameObject S20;
 	public GameObject S21;
+	*/
 
 	//Destroys ALL spikes. Used for correct respawn
 	public void AbsDestroyer (){
@@ -115,6 +116,7 @@ public class Spikes : MonoBehaviour {
 			S9.SetActive(true);
 		else if (SpikeNum == 10)
 			S10.SetActive(true);
+		/*
 		else if (SpikeNum == 11)
 			S11.SetActive(true);
 		else if (SpikeNum == 12)
@@ -137,10 +139,11 @@ public class Spikes : MonoBehaviour {
 			S20.SetActive(true);
 		else if (SpikeNum == 21)
 			S21.SetActive(true);
+			*/
 	}
 	void RandomSpikeNum()
 	{
-		SpikeNum = (int)Random.Range (1.0f, 21.0f);
+		SpikeNum = (int)Random.Range (1.0f, 10.0f);
 
 	}
 
