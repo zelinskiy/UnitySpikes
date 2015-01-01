@@ -1,0 +1,23 @@
+1)Скачиваем гит клиент
+
+2)создаем\заходим в локальную папку командами юникс
+
+3)git init
+
+4)git clone https://github.com/zelinskiy/UnitySpikes
+
+4)Заходим в репозиторий и подключаемся к основному репозиторию, чтобы он отслеживался
+	cd Game
+	git remote add upstream https://github.com/zelinskiy/UnitySpikes
+	git fetch upstream
+
+5)теперь можно открыть локальный репозиторий как проект из юнити.
+
+6)Когда мы чего то добавили в игру:
+
+	Добавляем все файлы: git add -A
+	коммитим: git commit -m "Make a comment here"
+
+	Заливаем на основной: git push origin feature
+
+Соответственно у меня появится pull request, который я могу превратить в ветку и слить с основной

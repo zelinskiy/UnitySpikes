@@ -56,8 +56,10 @@
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\Spikes.cs" />
      <Compile Include="Assets\SkinChangerMenu.cs" />
+     <Compile Include="Assets\Skin_Set_Imp.cs" />
      <Compile Include="Assets\Skin_changer.cs" />
      <Compile Include="Assets\Skins\Change_Skin.cs" />
+     <Compile Include="Assets\Skins\Sovok\Change_skin_sovok.cs" />
      <Compile Include="Assets\Skins\Ukr\HohloSkin.cs" />
      <Compile Include="Assets\goto_skinshop.cs" />
  <Reference Include="UnityEngine.UI">
